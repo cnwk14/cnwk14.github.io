@@ -36,7 +36,7 @@
             height:800px;
             width:800px;
                }
-            p {color:rebeccapurple;font-family:fantasy}
+            p {color:rebeccapurple;font-family:inherit}
             body {
              background-image: url(https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg)}
                  
@@ -91,3 +91,10 @@
 	</body>
      <script>
         var points = 0;
+        function score(){
+        points++; 
+        document.getElementById("score").innerHTML = points;
+        }
+    </script>
+</html>
+
