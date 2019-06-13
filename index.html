@@ -6,6 +6,22 @@
     </title>
         <h1>Sonali's Website</h1>
     <style>
+        
+         button{
+    width: 200px; 
+    height: 300px;
+    background-image:url("https://images.halloweencostumes.com/products/13600/1-1/girls-rag-doll-costume.jpg");
+    background-size: cover;
+       }
+    body{
+         text-align: center
+        }
+    button:hover{   
+        } 
+    button:active{
+    outline:  5px solid
+    black;
+        }
         video{
             width: 300px;
             height: 200px;
@@ -59,13 +75,22 @@
          <p>This is a Harry Potter video and it has Hermionie Granger's(my favorite character)best moments.</p>
          
         <h3>LINDA!:</h3>
-        <img src ="https://images.halloweencostumes.com/products/13600/1-1/girls-rag-doll-costume.jpg"
-         width="350" height="500">
         <p>Linda was born in 2018 and she has became the talk of Crazy World ever since. Linda lives a small log mansion where she smashes phones and eats thousands of cups of yogurt donated to her by her kind but also crazy friend Pugy Yo Yo</p>
+         <h1>LINDY Clicker</h1>
+        <button onclick="score()"></button>
+        <h3 id="score">0</h3>
         <p>Use your arrow keys to move Lindy across the screen!(This game was made in honor of Linda)</p>
          <iframe src="https://scratch.mit.edu/projects/314739226/embed" allowtransparency="true" width="485" height="402"  frameborder="0" scrolling="no" allowfullscreen></iframe>
         
-       
+
+      
 	</body>
+     <script>
+        var points = 0;
+        function score(){
+        points++; 
+        document.getElementById("score").innerHTML = points;
+        }
+    </script>
 </html>
 
